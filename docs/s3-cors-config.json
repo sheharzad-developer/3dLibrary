@@ -1,0 +1,42 @@
+{
+  "CORSRules": [
+    {
+      "ID": "AdminUploadCORS",
+      "AllowedHeaders": [
+        "*"
+      ],
+      "AllowedMethods": [
+        "GET",
+        "HEAD",
+        "POST",
+        "PUT"
+      ],
+      "AllowedOrigins": [
+        "http://localhost:3000",
+        "http://localhost:8000",
+        "https://your-admin-domain.com",
+        "https://your-preview-domain.com"
+      ],
+      "ExposeHeaders": [
+        "ETag",
+        "x-amz-request-id"
+      ],
+      "MaxAgeSeconds": 3600
+    },
+    {
+      "ID": "PublicReadCORS",
+      "AllowedHeaders": [
+        "Authorization",
+        "Content-Type"
+      ],
+      "AllowedMethods": [
+        "GET",
+        "HEAD"
+      ],
+      "AllowedOrigins": [
+        "*"
+      ],
+      "MaxAgeSeconds": 86400
+    }
+  ]
+}
