@@ -110,6 +110,9 @@ Experience the future of digital reading with our revolutionary 3D library platf
 ### Homepage
 ![Homepage](docs/screenshots/homepage.png)
 
+### Admin
+![Admin](docs/screenshots/admin.png)
+
 *Additional screenshots coming soon...*
 
 ## 🎯 Key Features in Detail
