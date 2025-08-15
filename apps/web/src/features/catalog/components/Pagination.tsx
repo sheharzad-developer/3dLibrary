@@ -65,7 +65,7 @@ export function Pagination() {
   const endItem = Math.min(page * pageSize, total);
 
   return (
-    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8">
+    <div className="flex flex-col sm:flex-row items-center justify-between gap-4 mt-8" style={{ color: 'white' }} >
       {/* Results info */}
       <div className="text-sm text-muted-foreground">
         Showing {startItem}-{endItem} of {total} results

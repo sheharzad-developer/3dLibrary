@@ -45,11 +45,11 @@ export function SortSelector() {
 
   return (
     <div className="flex items-center gap-2">
-      <span className="text-sm text-foreground/80">Sort by:</span>
+      <span className="text-sm font-semibold text-foreground" style={{ color: 'white' }}  >Sort by:</span>
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <Button variant="outline" size="sm" className="gap-2">
-            <ArrowUpDown className="h-4 w-4" />
+          <Button variant="outline" size="sm" className="gap-2 h-10 px-4 font-medium bg-background/80 border-border/60 hover:bg-background shadow-lg">
+            <ArrowUpDown className="h-4 w-4 text-primary" />
             {currentSortLabel}
             {getSortIcon()}
           </Button>

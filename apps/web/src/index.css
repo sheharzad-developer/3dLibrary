@@ -40,37 +40,37 @@
   }
 
   .dark {
-    --background: oklch(0.129 0.042 264.695);
-    --foreground: oklch(0.95 0.005 247.858);
-    --card: oklch(0.208 0.042 265.755);
-    --card-foreground: oklch(0.95 0.005 247.858);
-    --popover: oklch(0.208 0.042 265.755);
-    --popover-foreground: oklch(0.95 0.005 247.858);
-    --primary: oklch(0.929 0.013 255.508);
-    --primary-foreground: oklch(0.208 0.042 265.755);
-    --secondary: oklch(0.279 0.041 260.031);
-    --secondary-foreground: oklch(0.95 0.005 247.858);
-    --muted: oklch(0.279 0.041 260.031);
-    --muted-foreground: oklch(0.8 0.02 257.417);
-    --accent: oklch(0.279 0.041 260.031);
-    --accent-foreground: oklch(0.95 0.005 247.858);
-    --destructive: oklch(0.704 0.191 22.216);
-    --border: oklch(1 0 0 / 15%);
-    --input: oklch(1 0 0 / 20%);
-    --ring: oklch(0.551 0.027 264.364);
-    --chart-1: oklch(0.488 0.243 264.376);
-    --chart-2: oklch(0.696 0.17 162.48);
-    --chart-3: oklch(0.769 0.188 70.08);
-    --chart-4: oklch(0.627 0.265 303.9);
-    --chart-5: oklch(0.645 0.246 16.439);
-    --sidebar: oklch(0.208 0.042 265.755);
-    --sidebar-foreground: oklch(0.95 0.005 247.858);
-    --sidebar-primary: oklch(0.488 0.243 264.376);
-    --sidebar-primary-foreground: oklch(0.95 0.005 247.858);
-    --sidebar-accent: oklch(0.279 0.041 260.031);
-    --sidebar-accent-foreground: oklch(0.95 0.005 247.858);
-    --sidebar-border: oklch(1 0 0 / 15%);
-    --sidebar-ring: oklch(0.551 0.027 264.364);
+    --background: oklch(0.08 0.05 270);
+    --foreground: oklch(0.98 0.01 270);
+    --card: oklch(0.15 0.06 270);
+    --card-foreground: oklch(0.98 0.01 270);
+    --popover: oklch(0.15 0.06 270);
+    --popover-foreground: oklch(0.98 0.01 270);
+    --primary: oklch(0.7 0.15 280);
+    --primary-foreground: oklch(0.1 0.05 270);
+    --secondary: oklch(0.25 0.08 270);
+    --secondary-foreground: oklch(0.98 0.01 270);
+    --muted: oklch(0.25 0.08 270);
+    --muted-foreground: oklch(0.85 0.02 270);
+    --accent: oklch(0.25 0.08 270);
+    --accent-foreground: oklch(0.98 0.01 270);
+    --destructive: oklch(0.7 0.25 25);
+    --border: oklch(1 0 0 / 25%);
+    --input: oklch(1 0 0 / 30%);
+    --ring: oklch(0.7 0.15 280);
+    --chart-1: oklch(0.6 0.25 280);
+    --chart-2: oklch(0.7 0.2 160);
+    --chart-3: oklch(0.8 0.2 80);
+    --chart-4: oklch(0.65 0.3 300);
+    --chart-5: oklch(0.7 0.25 20);
+    --sidebar: oklch(0.15 0.06 270);
+    --sidebar-foreground: oklch(0.98 0.01 270);
+    --sidebar-primary: oklch(0.6 0.25 280);
+    --sidebar-primary-foreground: oklch(0.98 0.01 270);
+    --sidebar-accent: oklch(0.25 0.08 270);
+    --sidebar-accent-foreground: oklch(0.98 0.01 270);
+    --sidebar-border: oklch(1 0 0 / 25%);
+    --sidebar-ring: oklch(0.7 0.15 280);
   }
 
   * {
@@ -90,4 +90,16 @@
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+}
+
+button#radix-«rk», button#radix-«r2», button#radix-«r0» {
+    color: white;
+}
+
+label.text-sm.font-semibold.text-foreground.uppercase.tracking-wide {
+  color: white;
+}
+
+span.inline-flex.items-center.justify-center.rounded-md.border.w-fit.whitespace-nowrap.shrink-0.\[\&\>svg\]\:size-3.gap-1.\[\&\>svg\]\:pointer-events-none.focus-visible\:border-ring.focus-visible\:ring-ring\/50.focus-visible\:ring-\[3px\].aria-invalid\:ring-destructive\/20.dark\:aria-invalid\:ring-destructive\/40.aria-invalid\:border-destructive.overflow-hidden.border-transparent.\[a\&\]\:hover\:bg-primary\/90.cursor-pointer.px-4.py-2.text-sm.font-semibold.transition-all.duration-200.bg-primary.text-primary-foreground.shadow-lg.scale-105, span.inline-flex.items-center.justify-center.rounded-md.border.w-fit.whitespace-nowrap.shrink-0.\[\&\>svg\]\:size-3.gap-1.\[\&\>svg\]\:pointer-events-none.focus-visible\:border-ring.focus-visible\:ring-ring\/50.focus-visible\:ring-\[3px\].aria-invalid\:ring-destructive\/20.dark\:aria-invalid\:ring-destructive\/40.aria-invalid\:border-destructive.overflow-hidden.\[a\&\]\:hover\:bg-accent.\[a\&\]\:hover\:text-accent-foreground.cursor-pointer.px-4.py-2.text-sm.font-semibold.transition-all.duration-200.bg-background\/60.text-foreground\/80.hover\:bg-background\/80.hover\:text-foreground.border-border\/60, span.inline-flex.items-center.justify-center.rounded-md.border.w-fit.whitespace-nowrap.shrink-0.\[\&\>svg\]\:size-3.gap-1.\[\&\>svg\]\:pointer-events-none.focus-visible\:border-ring.focus-visible\:ring-ring\/50.focus-visible\:ring-\[3px\].aria-invalid\:ring-destructive\/20.dark\:aria-invalid\:ring-destructive\/40.aria-invalid\:border-destructive.overflow-hidden.\[a\&\]\:hover\:bg-accent.\[a\&\]\:hover\:text-accent-foreground.cursor-pointer.px-4.py-2.text-sm.font-semibold.transition-all.duration-200.bg-background\/60.text-foreground\/80.hover\:bg-background\/80.hover\:text-foreground.border-border\/60 {
+    color: white;
 }

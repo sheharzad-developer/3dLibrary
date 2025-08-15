@@ -65,10 +65,10 @@ export function FilterPanel() {
     filters.publishedYear?.max;
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-6 p-6 bg-card/50 backdrop-blur-sm rounded-xl border border-border/50 shadow-lg">
       <div className="flex items-center justify-between">
-        <h3 className="text-lg font-semibold flex items-center gap-2 text-foreground">
-          <Filter className="h-5 w-5" />
+        <h3 className="text-xl font-bold flex items-center gap-3 text-foreground" style={{ color: 'white' }} >
+          <Filter className="h-6 w-6 text-primary" style={{ color: 'white' }}  />
           Filters
         </h3>
         {hasActiveFilters && (
@@ -80,11 +80,11 @@ export function FilterPanel() {
       </div>
 
       {/* Category Filter */}
-      <div className="space-y-2">
-        <label className="text-sm font-medium text-foreground">Category</label>
+      <div className="space-y-3">
+        <label className="text-sm font-semibold text-foreground uppercase tracking-wide">Category</label>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" className="w-full justify-start">
+            <Button variant="outline" className="w-full justify-start h-12 text-base font-medium bg-background/80 hover:bg-background">
               {filters.category || 'Select Category'}
             </Button>
           </DropdownMenuTrigger>
@@ -107,25 +107,30 @@ export function FilterPanel() {
       </div>
 
       {/* Author Filter */}
-      <div className="space-y-2">
-        <label className="text-sm font-medium text-foreground">Author</label>
+      <div className="space-y-3">
+        <label className="text-sm font-semibold text-foreground uppercase tracking-wide">Author</label>
         <Input
           type="text"
           placeholder="Filter by author..."
           value={filters.author}
           onChange={(e) => handleAuthorChange(e.target.value)}
+          className="h-12 text-base font-medium bg-background/80 border-border/60 focus:border-primary" style={{ color: 'white' }}  
         />
       </div>
 
       {/* Availability Filter */}
-      <div className="space-y-2">
-        <label className="text-sm font-medium text-foreground">Availability</label>
-        <div className="flex flex-wrap gap-2">
+      <div className="space-y-3">
+        <label className="text-sm font-semibold text-foreground uppercase tracking-wide">Availability</label>
+        <div className="flex flex-wrap gap-3">
           {availabilityOptions.map((option) => (
             <Badge
               key={option.value}
               variant={filters.availability === option.value ? 'default' : 'outline'}
-              className="cursor-pointer"
+              className={`cursor-pointer px-4 py-2 text-sm font-semibold transition-all duration-200 ${
+                filters.availability === option.value 
+                  ? 'bg-primary text-primary-foreground shadow-lg scale-105' 
+                  : 'bg-background/60 text-foreground/80 hover:bg-background/80 hover:text-foreground border-border/60'
+              }`}
               onClick={() => handleAvailabilityChange(option.value)}
             >
               {option.label}
@@ -135,9 +140,9 @@ export function FilterPanel() {
       </div>
 
       {/* Published Year Range */}
-      <div className="space-y-2">
-        <label className="text-sm font-medium text-foreground">Published Year</label>
-        <div className="flex gap-2">
+      <div className="space-y-3">
+        <label className="text-sm font-semibold text-foreground uppercase tracking-wide">Published Year</label>
+        <div className="flex gap-3" style={{ color: 'white' }}>
           <Input
             type="number"
             placeholder="From"
@@ -145,6 +150,7 @@ export function FilterPanel() {
             onChange={(e) => handleYearRangeChange('min', e.target.value)}
             min="1800"
             max={new Date().getFullYear()}
+            className="h-12 text-base font-medium bg-background/80 border-border/60 focus:border-primary"
           />
           <Input
             type="number"
@@ -153,6 +159,7 @@ export function FilterPanel() {
             onChange={(e) => handleYearRangeChange('max', e.target.value)}
             min="1800"
             max={new Date().getFullYear()}
+            className="h-12 text-base font-medium bg-background/80 border-border/60 focus:border-primary"
           />
         </div>
       </div>
