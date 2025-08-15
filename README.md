@@ -110,14 +110,7 @@ Experience the future of digital reading with our revolutionary 3D library platf
 ### Homepage
 ![Homepage](docs/screenshots/homepage.png)
 
-### 3D Book Viewer
-![3D Viewer](docs/screenshots/3d-viewer.png)
-
-### Catalog
-![Catalog](docs/screenshots/catalog.png)
-
-### Login
-![Login](docs/screenshots/login.png)
+*Additional screenshots coming soon...*
 
 ## 🎯 Key Features in Detail
 
